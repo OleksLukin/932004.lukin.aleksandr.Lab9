@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>lab 9</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />	
+	</head>
+	<body>
+		<div id = "FrameDiv">
+			<div id = "InputDiv">
+				<table id="InputTable">
+					<tr>
+						<td id="Input1">0</td>
+						<td id="InputOp"></td>
+						<td id="Input2"></td>
+					</tr>
+				</table>
+			</div>
+			<table class = "CalcTable">
+				<tr>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('7')">7</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('8')">8</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('9')">9</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="addOp(3)">/</button></td>
+					<td class="CalcBtns" id="RightColumn"><button class="Btns" onclick="Reset()">C</button></td>
+				</tr>
+				<tr>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('4')">4</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('5')">5</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('6')">6</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="addOp(2)">*</button></td>
+					<td class="CalcBtns" id="RightColumn"><button class="Btns" onclick="RemoveLast()"><-</button></td>
+				</tr>
+				<tr>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('1')">1</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('2')">2</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="ChangeNumber('3')">3</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="addOp(1)">-</button></td>
+					<td rowspan="2" class="CalcBtns" id="RightColumn"><button class="Btns" onclick="Result()">=</button></td>
+					
+				</tr>
+				<tr>
+					<td colspan="2" class="CalcBtns"><button class="Btns" onclick="ChangeNumber('0')">0</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="addDot()">.</button></td>
+					<td class="CalcBtns"><button class="Btns" onclick="addOp(0)">+</button></td>
+				</tr>
+			</table>
+		</div>
+		<script src="script.js" ></script>
+	</body>
+</html>
